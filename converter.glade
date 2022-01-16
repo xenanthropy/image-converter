@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="converted_window">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Converted!</property>
+    <property name="default-width">250</property>
+    <property name="default-height">150</property>
+    <child>
+      <object class="GtkFixed" id="gtkfixed2">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkLabel" id="confirm_label">
+            <property name="width-request">67</property>
+            <property name="height-request">20</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Converted!</property>
+            <attributes>
+              <attribute name="foreground" value="#5757e3e38989"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">86</property>
+            <property name="y">34</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="ok_button">
+            <property name="label" translatable="yes">OK</property>
+            <property name="width-request">80</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">80</property>
+            <property name="y">74</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Image Converter</property>
+    <property name="default-width">350</property>
+    <property name="default-height">340</property>
+    <property name="icon">logo.png</property>
+    <child>
+      <object class="GtkFixed" id="gtkfixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkFileChooserButton" id="file_chooser">
+            <property name="width-request">300</property>
+            <property name="height-request">35</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="show-hidden">True</property>
+            <property name="title" translatable="yes"/>
+          </object>
+          <packing>
+            <property name="x">24</property>
+            <property name="y">45</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBoxText" id="combo_box">
+            <property name="width-request">300</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="has-entry">True</property>
+            <items>
+              <item id="jpg" translatable="yes">JPG</item>
+              <item id="bmp" translatable="yes">BMP</item>
+              <item id="png" translatable="yes">PNG</item>
+              <item id="gif" translatable="yes">GIF</item>
+              <item id="tga" translatable="yes">TGA</item>
+              <item id="tiff" translatable="yes">TIFF</item>
+              <item id="webp" translatable="yes">WEBP</item>
+            </items>
+            <child internal-child="entry">
+              <object class="GtkEntry" id="entry">
+                <property name="can-focus">False</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">24</property>
+            <property name="y">125</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button">
+            <property name="label" translatable="yes">Convert!</property>
+            <property name="width-request">90</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">120</property>
+            <property name="y">279</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_1">
+            <property name="width-request">100</property>
+            <property name="height-request">25</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">File to convert:</property>
+            <property name="single-line-mode">True</property>
+          </object>
+          <packing>
+            <property name="x">23</property>
+            <property name="y">18</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_2">
+            <property name="width-request">80</property>
+            <property name="height-request">20</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Format:</property>
+          </object>
+          <packing>
+            <property name="x">11</property>
+            <property name="y">101</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_3">
+            <property name="width-request">100</property>
+            <property name="height-request">20</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Save location:</property>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">182</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFileChooserButton" id="folder_chooser">
+            <property name="width-request">300</property>
+            <property name="height-request">35</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="action">select-folder</property>
+            <property name="title" translatable="yes"/>
+          </object>
+          <packing>
+            <property name="x">24</property>
+            <property name="y">205</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
